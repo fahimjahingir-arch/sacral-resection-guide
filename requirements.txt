@@ -1,0 +1,12 @@
+numpy
+scipy
+trimesh
+manifold3d
+rtree
+scikit-image
+scikit-fem
+pyamg
+matplotlib
+pyvista
+SimpleITK
+totalsegmentator  # pulls in PyTorch; only needed for real_ct.py

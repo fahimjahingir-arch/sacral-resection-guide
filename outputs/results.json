@@ -1,0 +1,414 @@
+{
+ "source": {
+  "bone": "outputs/ct_work/bone_in.stl",
+  "tumor": "outputs/ct_work/tumor_in.stl"
+ },
+ "plan": {
+  "level_fraction": 0.6284214640857433,
+  "n": [
+   0.0,
+   -0.3902402777433494,
+   0.9207130528165622
+  ],
+  "d": 152.36230343944803,
+  "margin_mm": 10.0,
+  "tilt_deg": 0.0,
+  "q_tumor": [
+   11.714062690734863,
+   183.1140594482422,
+   232.23390197753906
+  ],
+  "q_plane": [
+   11.714062690734863,
+   179.21165667080868,
+   241.4410325057047
+  ],
+  "z_level_midline": 245.329833984375,
+  "bone_kept_fraction": 0.6250596529550967,
+  "min_tumor_to_plane_mm": 10.0
+ },
+ "variants": {
+  "A_narrow": {
+   "params": {
+    "name": "A_narrow",
+    "band_mm": 12.0,
+    "lateral_mm": 60.0,
+    "grid_mm": 0.5,
+    "clearance_mm": 0.3,
+    "hole_relief_mm": 1.0,
+    "base_thickness_mm": 4.0,
+    "housing_half_mm": 6.0,
+    "housing_height_mm": 10.0,
+    "blade_mm": 1.27,
+    "slot_clearance_mm": 0.13,
+    "end_bridge_mm": 5.0,
+    "tumor_keepout_mm": 3.0,
+    "n_kwires": 0,
+    "kwire_hole_mm": 1.8,
+    "kwire_boss_r_mm": 3.5,
+    "kwire_boss_h_mm": 8.0,
+    "kwire_depth_mm": 15.0,
+    "kwire_safety_mm": 3.0
+   },
+   "watertight": true,
+   "volume_cm3": 18.718470708423904,
+   "bbox_mm": [
+    105.0,
+    61.7,
+    37.5
+   ],
+   "contact_area_cm2": 21.71,
+   "slot_length_mm": 88.5,
+   "kwires": [],
+   "stability": {
+    "n_contact_patches": 87,
+    "tau_mm": 0.5,
+    "offset_mean_abs_mm": 0.21489529799670032,
+    "offset_p95_mm": 0.5296360775812105,
+    "angle_mean_deg": 0.590759414430103,
+    "angle_p95_deg": 1.1611325798734307,
+    "eig_min": 0.045197884341919244,
+    "eig_max": 0.764510588040472,
+    "condition": 16.91474278435238,
+    "weakest_mode": "rot x (flex/ext)",
+    "margin_consumed_p95_pct": 5.296360775812104
+   }
+  },
+  "B_wide": {
+   "params": {
+    "name": "B_wide",
+    "band_mm": 25.0,
+    "lateral_mm": 60.0,
+    "grid_mm": 0.5,
+    "clearance_mm": 0.3,
+    "hole_relief_mm": 1.0,
+    "base_thickness_mm": 4.0,
+    "housing_half_mm": 6.0,
+    "housing_height_mm": 10.0,
+    "blade_mm": 1.27,
+    "slot_clearance_mm": 0.13,
+    "end_bridge_mm": 5.0,
+    "tumor_keepout_mm": 3.0,
+    "n_kwires": 0,
+    "kwire_hole_mm": 1.8,
+    "kwire_boss_r_mm": 3.5,
+    "kwire_boss_h_mm": 8.0,
+    "kwire_depth_mm": 15.0,
+    "kwire_safety_mm": 3.0
+   },
+   "watertight": true,
+   "volume_cm3": 29.87467675990576,
+   "bbox_mm": [
+    109.0,
+    71.7,
+    56.5
+   ],
+   "contact_area_cm2": 44.75,
+   "slot_length_mm": 88.5,
+   "kwires": [],
+   "stability": {
+    "n_contact_patches": 181,
+    "tau_mm": 0.5,
+    "offset_mean_abs_mm": 0.12561038665408977,
+    "offset_p95_mm": 0.306419572160672,
+    "angle_mean_deg": 0.24471225741181338,
+    "angle_p95_deg": 0.48087731957328583,
+    "eig_min": 0.04733427198790825,
+    "eig_max": 0.709932112908928,
+    "condition": 14.998268339064838,
+    "weakest_mode": "slide z (cranio-caudal)",
+    "margin_consumed_p95_pct": 3.06419572160672
+   }
+  },
+  "C_wide_kwires": {
+   "params": {
+    "name": "C_wide_kwires",
+    "band_mm": 25.0,
+    "lateral_mm": 60.0,
+    "grid_mm": 0.5,
+    "clearance_mm": 0.3,
+    "hole_relief_mm": 1.0,
+    "base_thickness_mm": 4.0,
+    "housing_half_mm": 6.0,
+    "housing_height_mm": 10.0,
+    "blade_mm": 1.27,
+    "slot_clearance_mm": 0.13,
+    "end_bridge_mm": 5.0,
+    "tumor_keepout_mm": 3.0,
+    "n_kwires": 3,
+    "kwire_hole_mm": 1.8,
+    "kwire_boss_r_mm": 3.5,
+    "kwire_boss_h_mm": 8.0,
+    "kwire_depth_mm": 15.0,
+    "kwire_safety_mm": 3.0
+   },
+   "watertight": true,
+   "volume_cm3": 30.878330057201342,
+   "bbox_mm": [
+    109.0,
+    71.7,
+    56.5
+   ],
+   "contact_area_cm2": 44.75,
+   "slot_length_mm": 88.5,
+   "kwires": [
+    [
+     65.0,
+     260.4410325057047,
+     175.5154433507255,
+     172.21544335072548
+    ],
+    [
+     -30.0,
+     257.9410325057047,
+     174.80462090558825,
+     171.50462090558824
+    ],
+    [
+     17.0,
+     268.4410325057047,
+     210.08277229470616,
+     206.78277229470615
+    ]
+   ],
+   "stability": {
+    "n_contact_patches": 181,
+    "tau_mm": 0.5,
+    "offset_mean_abs_mm": 0.12561038665408977,
+    "offset_p95_mm": 0.306419572160672,
+    "angle_mean_deg": 0.24471225741181338,
+    "angle_p95_deg": 0.48087731957328583,
+    "eig_min": 0.04733427198790825,
+    "eig_max": 0.709932112908928,
+    "condition": 14.998268339064838,
+    "weakest_mode": "slide z (cranio-caudal)",
+    "margin_consumed_p95_pct": 3.06419572160672
+   }
+  }
+ },
+ "fea": {
+  "assumptions": {
+   "F_N": 20.0,
+   "pitch_mm": 0.8,
+   "load": "uniform on cephalad slot wall, along -n",
+   "materials_MPa": {
+    "PA12 (SLS)": 1700.0,
+    "Biocompatible SLA resin": 2600.0,
+    "Ti-6Al-4V (DMLS)": 110000.0
+   }
+  },
+  "variants_PA12": [
+   {
+    "support": "bonded",
+    "E_MPa": 1700.0,
+    "F_N": 20.0,
+    "pitch_mm": 0.8,
+    "n_elements": 36608,
+    "n_dof": 148314,
+    "cg_info": 0,
+    "wall_max_deflection_mm": 0.003419761142057596,
+    "wall_mean_deflection_mm": 0.0005948107665210758,
+    "n_loaded_nodes": 2884,
+    "wall_top_edge_mm": 0.001843395643414812,
+    "wall_root_mm": 1.2976871898075048e-05,
+    "wall_height_mm": 23.039955879972467,
+    "blade_angle_error_deg": 0.004551886760336654,
+    "max_total_disp_mm": 0.0034735825373456105,
+    "solve_s": 60.5,
+    "variant": "A_narrow"
+   },
+   {
+    "support": "bonded",
+    "E_MPa": 1700.0,
+    "F_N": 20.0,
+    "pitch_mm": 0.8,
+    "n_elements": 58321,
+    "n_dof": 242391,
+    "cg_info": 0,
+    "wall_max_deflection_mm": 0.003687816565148878,
+    "wall_mean_deflection_mm": 0.00057618257235231,
+    "n_loaded_nodes": 2871,
+    "wall_top_edge_mm": 0.0017691165935342298,
+    "wall_root_mm": 1.1801709010915524e-05,
+    "wall_height_mm": 22.81645652532336,
+    "blade_angle_error_deg": 0.0044128993407834445,
+    "max_total_disp_mm": 0.0037455273305911124,
+    "solve_s": 105.0,
+    "variant": "B_wide"
+   },
+   {
+    "support": "bonded",
+    "E_MPa": 1700.0,
+    "F_N": 20.0,
+    "pitch_mm": 0.8,
+    "n_elements": 60149,
+    "n_dof": 249501,
+    "cg_info": 0,
+    "wall_max_deflection_mm": 0.0036838859419326053,
+    "wall_mean_deflection_mm": 0.000575949747749629,
+    "n_loaded_nodes": 2871,
+    "wall_top_edge_mm": 0.0017691261353637838,
+    "wall_root_mm": 1.1800499340560183e-05,
+    "wall_height_mm": 22.81645652532336,
+    "blade_angle_error_deg": 0.0044129263395228805,
+    "max_total_disp_mm": 0.0037414402564912267,
+    "solve_s": 108.2,
+    "variant": "C_wide_kwires"
+   },
+   {
+    "support": "pins",
+    "E_MPa": 1700.0,
+    "F_N": 20.0,
+    "pitch_mm": 0.8,
+    "n_elements": 60149,
+    "n_dof": 249501,
+    "cg_info": 0,
+    "wall_max_deflection_mm": 0.0453042765138502,
+    "wall_mean_deflection_mm": 0.01521225281881101,
+    "n_loaded_nodes": 2871,
+    "wall_top_edge_mm": 0.02545144581701031,
+    "wall_root_mm": 0.011068392104009199,
+    "wall_height_mm": 22.81645652532336,
+    "blade_angle_error_deg": 0.03611814850354355,
+    "max_total_disp_mm": 0.05749925977774589,
+    "solve_s": 324.6,
+    "variant": "C_wide_kwires"
+   },
+   {
+    "support": "both",
+    "E_MPa": 1700.0,
+    "F_N": 20.0,
+    "pitch_mm": 0.8,
+    "n_elements": 60149,
+    "n_dof": 249501,
+    "cg_info": 0,
+    "wall_max_deflection_mm": 0.0036776050965158526,
+    "wall_mean_deflection_mm": 0.0005755750584406127,
+    "n_loaded_nodes": 2871,
+    "wall_top_edge_mm": 0.0017691384609858976,
+    "wall_root_mm": 1.1798547915239726e-05,
+    "wall_height_mm": 22.81645652532336,
+    "blade_angle_error_deg": 0.004412962191477198,
+    "max_total_disp_mm": 0.0037349372807544555,
+    "solve_s": 106.8,
+    "variant": "C_wide_kwires"
+   }
+  ],
+  "materials_B_bonded": {
+   "PA12 (SLS)": {
+    "wall_max_deflection_mm": 0.003687816565148878,
+    "blade_angle_error_deg": 0.0044128993407834445
+   },
+   "Biocompatible SLA resin": {
+    "wall_max_deflection_mm": 0.002411264677212728,
+    "blade_angle_error_deg": 0.002885357261281483
+   },
+   "Ti-6Al-4V (DMLS)": {
+    "wall_max_deflection_mm": 5.699352873411902e-05,
+    "blade_angle_error_deg": 6.819935344847142e-05
+   }
+  },
+  "housing_height_B_PA12": [
+   {
+    "support": "bonded",
+    "E_MPa": 1700.0,
+    "F_N": 20.0,
+    "pitch_mm": 0.8,
+    "n_elements": 50282,
+    "n_dof": 213552,
+    "cg_info": 0,
+    "wall_max_deflection_mm": 0.0008293363579570566,
+    "wall_mean_deflection_mm": 0.00019930278607836668,
+    "n_loaded_nodes": 2148,
+    "wall_top_edge_mm": 0.00029082618426773843,
+    "wall_root_mm": 1.4534991837932328e-05,
+    "wall_height_mm": 14.44465192182551,
+    "blade_angle_error_deg": 0.001095929436486799,
+    "max_total_disp_mm": 0.0008721401141232653,
+    "solve_s": 80.7,
+    "housing_height_mm": 6.0
+   },
+   {
+    "support": "bonded",
+    "E_MPa": 1700.0,
+    "F_N": 20.0,
+    "pitch_mm": 0.8,
+    "n_elements": 58321,
+    "n_dof": 242391,
+    "cg_info": 0,
+    "wall_max_deflection_mm": 0.0036878165651498206,
+    "wall_mean_deflection_mm": 0.0005761825723523105,
+    "n_loaded_nodes": 2871,
+    "wall_top_edge_mm": 0.0017691165935336023,
+    "wall_root_mm": 1.1801709010911769e-05,
+    "wall_height_mm": 22.81645652532336,
+    "blade_angle_error_deg": 0.004412899340781878,
+    "max_total_disp_mm": 0.0037455273305920826,
+    "solve_s": 104.4,
+    "housing_height_mm": 10.0
+   },
+   {
+    "support": "bonded",
+    "E_MPa": 1700.0,
+    "F_N": 20.0,
+    "pitch_mm": 0.8,
+    "n_elements": 66453,
+    "n_dof": 270696,
+    "cg_info": 0,
+    "wall_max_deflection_mm": 0.0066241734773019745,
+    "wall_mean_deflection_mm": 0.0010654808447730032,
+    "n_loaded_nodes": 3259,
+    "wall_top_edge_mm": 0.0031788296471894,
+    "wall_root_mm": 1.105434418797834e-05,
+    "wall_height_mm": 24.27470014266794,
+    "blade_angle_error_deg": 0.007476926726623019,
+    "max_total_disp_mm": 0.006743184781606981,
+    "solve_s": 107.1,
+    "housing_height_mm": 14.0
+   }
+  ],
+  "convergence_B": [
+   {
+    "pitch_mm": 1.2,
+    "n_elements": 17262,
+    "wall_max_deflection_mm": 0.0032834503704107197
+   },
+   {
+    "pitch_mm": 1.0,
+    "n_elements": 29808,
+    "wall_max_deflection_mm": 0.0048779592546567664
+   },
+   {
+    "pitch_mm": 0.8,
+    "n_elements": 58321,
+    "wall_max_deflection_mm": 0.003687816565148878
+   },
+   {
+    "pitch_mm": 0.6,
+    "n_elements": 138232,
+    "wall_max_deflection_mm": 0.0031825086665913504
+   }
+  ],
+  "slot_play": [
+   {
+    "housing_height_mm": 6.0,
+    "guided_depth_mm": 10.0,
+    "clearance_mm": 0.13,
+    "play_angle_deg": 0.7448031783150643
+   },
+   {
+    "housing_height_mm": 10.0,
+    "guided_depth_mm": 14.0,
+    "clearance_mm": 0.13,
+    "play_angle_deg": 0.5320169477240433
+   },
+   {
+    "housing_height_mm": 14.0,
+    "guided_depth_mm": 18.0,
+    "clearance_mm": 0.13,
+    "play_angle_deg": 0.41379565754371783
+   }
+  ]
+ },
+ "runtime_s": 1284.0368301868439
+}

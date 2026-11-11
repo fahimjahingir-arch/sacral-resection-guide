@@ -1,0 +1,14 @@
+{
+ "table_to_planned_plane_mm": 111.08187897920746,
+ "expected_blade_lower_face_mm": 110.38187897920746,
+ "how_to_use": "seat/cut lying on the BACKPLATE; measure standing on the BASE",
+ "note": "the shim rests on the caudal slot wall (gravity), so its lower face sits half a slot width below the plane",
+ "n_bodies": 1,
+ "watertight": true,
+ "volume_cm3": 973.9607332485584,
+ "bbox_mm": [
+  153.5,
+  154.8,
+  198.2
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "cases": [
+  {
+   "true_offset_mm": 0.0,
+   "true_angle_deg": 0.0,
+   "offset_mm": 0.006,
+   "angle_deg": 0.023,
+   "flatness_rms_mm": 0.089,
+   "icp_rms_mm": 0.06,
+   "icp_inlier_fraction": 0.943,
+   "n_cut_points": 8000,
+   "margin_remaining_mm": 10.006
+  },
+  {
+   "true_offset_mm": -1.5,
+   "true_angle_deg": 0.0,
+   "offset_mm": -1.641,
+   "angle_deg": 0.312,
+   "flatness_rms_mm": 0.18,
+   "icp_rms_mm": 0.575,
+   "icp_inlier_fraction": 0.995,
+   "n_cut_points": 8000,
+   "margin_remaining_mm": 8.359
+  },
+  {
+   "true_offset_mm": 1.0,
+   "true_angle_deg": 3.0,
+   "offset_mm": 0.975,
+   "angle_deg": 3.1,
+   "flatness_rms_mm": 0.109,
+   "icp_rms_mm": 0.059,
+   "icp_inlier_fraction": 0.936,
+   "n_cut_points": 8000,
+   "margin_remaining_mm": 10.975
+  },
+  {
+   "true_offset_mm": -0.8,
+   "true_angle_deg": 5.0,
+   "offset_mm": -0.954,
+   "angle_deg": 4.743,
+   "flatness_rms_mm": 0.133,
+   "icp_rms_mm": 0.648,
+   "icp_inlier_fraction": 0.989,
+   "n_cut_points": 8000,
+   "margin_remaining_mm": 9.046
+  }
+ ],
+ "max_offset_error_mm": 0.15399999999999991,
+ "max_angle_error_deg": 0.312
+}

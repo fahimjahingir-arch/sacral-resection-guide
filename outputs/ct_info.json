@@ -1,0 +1,28 @@
+{
+ "source": "TCIA Pelvic-Reference-Data, Pelvic-Ref-003 (CC BY 3.0, doi:10.7937/TCIA.2019.woskq5oo)",
+ "ct_shape": [
+  512,
+  512,
+  145
+ ],
+ "ct_spacing_mm": [
+  1.0,
+  1.0,
+  3.0
+ ],
+ "sacrum_label_volume_ml": 247.812,
+ "refined_iso_mm": 0.6,
+ "bone_pieces": 1,
+ "bone_watertight": true,
+ "tumor": {
+  "simulated": true,
+  "level_fraction": 0.68,
+  "center_mm": [
+   14.011642342036222,
+   193.3440625,
+   213.77764082689725
+  ],
+  "volume_ml": 27.748007999999995,
+  "bone_destroyed_ml": 17.799048
+ }
+}

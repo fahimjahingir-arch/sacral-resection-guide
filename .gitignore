@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Raw / intermediate imaging data (re-download from TCIA, regenerate with real_ct.py)
+outputs/ct_work/
+*.nii
+*.nii.gz
+*.dcm
+*.npy
+*.npz
+
+# Large regenerable meshes (run_all.py / validation/fixture.py rebuild them)
+outputs/bone_preserved.stl
+outputs/bone_resected_specimen.stl
+outputs/test_fixture.stl
+outputs_phantom/*.stl
+
+# Logs
+*.log
+outputs/run_log.txt
+outputs/real_ct_log.txt
+outputs_phantom/run_log.txt
