@@ -15,7 +15,7 @@ Two flat datum faces:
 The cradle has a 5 mm relief groove on the planned plane, so the saw can't cut the fixture,
 and both bone pieces stay attached after the cut.
 
-  python fixture.py   -> outputs/test_fixture.stl, outputs/fixture_info.json
+  python fixture.py   -> outputs/test_fixture.stl, outputs/fixture_info.json, outputs/figures/09_fixture.png
 """
 import json
 import os
@@ -86,6 +86,9 @@ def main(base_gap=4.0, base_t=8.0, plate_t=12.0, embed=2.0, groove=2.5, grid=1.0
             "volume_cm3": float(mesh.volume / 1000), "bbox_mm": np.round(mesh.extents, 1).tolist()}
     json.dump(info, open(os.path.join(OUT, "fixture_info.json"), "w"), indent=1)
     print(json.dumps(info, indent=1))
+    import render
+    os.makedirs(os.path.join(OUT, "figures"), exist_ok=True)
+    render.fixture_figure(mesh, n, u, v, os.path.join(OUT, "figures", "09_fixture.png"))
 
 
 if __name__ == "__main__":

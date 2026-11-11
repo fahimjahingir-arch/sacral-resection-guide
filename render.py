@@ -193,3 +193,14 @@ def all_figures(bone, tumor, guides, plan, res, OUT):
         guide_only(g.mesh, os.path.join(fig, f"04_guide_{name}.png"), name)
     contact_maps(guides, os.path.join(fig, "05_contact_maps.png"))
     bar_charts(res, os.path.join(fig, "06_stability.png"))
+
+
+def fixture_figure(mesh, n, u, v, path):
+    """Test fixture standing on its base (planned plane horizontal), seen from the posterior side."""
+    n, u, v = (np.asarray(x, float) for x in (n, u, v))
+    p = _plotter((1000, 820))
+    p.add_mesh(_pv(mesh), color="#d9d6cf", smooth_shading=False, specular=0.15)
+    _cam(p, mesh.bounds.mean(0), 0.75 * u + 1.0 * v + 0.55 * n, 480, up=tuple(n))
+    p.add_text("Test fixture: bone + anterior cradle + backplate + base", font_size=12, position="upper_edge")
+    p.screenshot(path)
+    p.close()

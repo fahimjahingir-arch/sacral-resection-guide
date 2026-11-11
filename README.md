@@ -44,20 +44,39 @@ which verified the pipeline. Segmentation Dice was 0.93 for bone and 0.95 for tu
 Clark K, et al. *J Digit Imaging* 2013 (TCIA); Wasserthal J, et al. *Radiol Artif Intell* 2023 (TotalSegmentator).
 
 ## Setup
+Python 3.10+. Create and activate a virtual environment:
+
+**macOS / Linux**
+```bash
+python3 -m venv venv
+source venv/bin/activate
 ```
+**Windows (PowerShell)**
+```powershell
 python -m venv venv
-venv\Scripts\python -m pip install -r requirements.txt
-# Real CT: download the DICOM series from TCIA, then (sacrum segmentation ~30 s on CPU; first run downloads ~1.4 GB of model weights)
-venv\Scripts\python real_ct.py --dicom path\to\dicom --tumor-level 0.68
-venv\Scripts\python run_all.py --bone outputs\bone.stl --tumor outputs\tumor.stl     # ~20 min with FEA, add --skip-fea for ~20 s
-# Or the synthetic phantom:
-venv\Scripts\python run_all.py
-# Bench-test kit
-venv\Scripts\python validation\fixture.py
-venv\Scripts\python validation\analyze_cut.py --selftest
-venv\Scripts\python validation\autoclave_coupon.py --make
-venv\Scripts\python make_report.py
+venv\Scripts\Activate.ps1
 ```
+
+With the venv active, the rest is the same on every OS:
+```bash
+pip install -r requirements.txt
+
+# Real CT: download the DICOM series from TCIA, then run the commands below.
+# Sacrum segmentation takes ~30 s on CPU; the first run downloads ~1.4 GB of model weights.
+python real_ct.py --dicom path/to/dicom --tumor-level 0.68
+python run_all.py --bone outputs/bone.stl --tumor outputs/tumor.stl   # ~20 min with FEA; add --skip-fea for ~20 s
+
+# Or the synthetic phantom (no download needed):
+python run_all.py
+
+# Bench-test kit
+python validation/fixture.py               # test_fixture.stl + figures/09_fixture.png
+python validation/analyze_cut.py --selftest
+python validation/autoclave_coupon.py --make
+python make_report.py
+```
+On a headless Linux machine, the PyVista figure rendering needs an off-screen display. Install `xvfb`, then
+run the scripts under `xvfb-run`, for example `xvfb-run python run_all.py`.
 
 ## Files
 | File | What it does |

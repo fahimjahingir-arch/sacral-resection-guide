@@ -15,7 +15,6 @@ outputs/ct_work/
 # Large regenerable meshes (run_all.py / validation/fixture.py rebuild them)
 outputs/bone_preserved.stl
 outputs/bone_resected_specimen.stl
-outputs/test_fixture.stl
 outputs_phantom/*.stl
 
 # Logs

@@ -14,7 +14,7 @@ collect the full data set.
 **Prints**
 | Part | File | Material / process | Notes |
 |---|---|---|---|
-| Sacrum test fixture | `outputs/test_fixture.stl` (~500 cm³ solid, ~150–200 g at 15 % infill) | PLA or PETG FDM, 0.2 mm layers, 15 % gyroid infill, 4 walls | Print **backplate-down**. The base face (the other flat face) is the measuring datum: check it with a straightedge, and sand it flat if it warped |
+| Sacrum test fixture | `outputs/test_fixture.stl` (~970 cm³ solid, ~250–350 g at 15 % infill) | PLA or PETG FDM, 0.2 mm layers, 15 % gyroid infill, 4 walls | Print **backplate-down**. The base face (the other flat face) is the measuring datum: check it with a straightedge, and sand it flat if it warped |
 | Guide C | `outputs/guide_C_wide_kwires.stl` | Same process you'd propose clinically (PA12 SLS through a print service, or SLA resin) | Orient the slot vertically so the slot walls aren't stair-stepped |
 
 **Equipment:** oscillating saw with a 1.27 mm blade (a hobby multi-tool works for printed bone), 1.6 mm
